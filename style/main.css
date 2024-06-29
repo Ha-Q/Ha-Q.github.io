@@ -1,13 +1,9 @@
-html, body, h1, h2, h3, p, ul, ol, li, a {
-    padding: 0;
-    border: 0;
-    margin: 0;
-}
-
 body {
-    padding: 20px 20px 20px 20px;
     font-family: 'Calibri', 'Times New Roman', Times, serif;
     color: rgb(4, 92, 98);
+    background-color: rgba(133, 164, 163, 0.422);
+    margin: 1em auto;
+    width: 60vw;
 }
 
 h1 {
@@ -24,22 +20,17 @@ p {
     font-size: 16px;
     line-height: 1.5;
     margin: 10px 0 10px 0;
-    
 }
-body {
-    background-color: rgba(133, 164, 163, 0.422);
-}
-
-.nav > li {
+.menu {
     list-style-type: none;
-    display: inline;
     margin: auto;
+    padding-left: 0px;
+    display: grid;
+    /* grid: repeat(1, 20px)/auto-flow; */
 }
 
-ul > li {
-    padding: 0 40px 0 20px;
-    list-style-type: none;
-   
+.menu_item {
+    padding: 0 20px;
 }
 a {
     text-decoration: none;
