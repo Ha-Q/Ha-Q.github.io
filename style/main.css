@@ -1,40 +1,71 @@
+a:hover, .style_link:hover{
+    color: rgb(249, 141, 207);
+    
+}
+a:visited{
+    color: #115702;
+}
 body {
-    font-family: 'Calibri', 'Times New Roman', Times, serif;
-    color: rgb(4, 92, 98);
-    background-color: rgba(133, 164, 163, 0.422);
+    font-family: 'consolas', 'Times New Roman', Times, serif;
+    color: rgb(98, 103, 68);
+    background-color: rgba(249, 249, 207, 0.42);
     margin: 1em auto;
     width: 60vw;
 }
 
 h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(2, 73, 28);
+    color: rgb(81, 92, 59);
 }
 h2 {
     margin: 20px 0 20px 0;
     text-align: center;
-    color: rgb(2, 111, 106);
+    color: rgb(4, 83, 6);
     
+}
+h3{
+    color: #115702;
 }
 p {
     font-size: 16px;
     line-height: 1.5;
     margin: 10px 0 10px 0;
 }
-.menu {
-    list-style-type: none;
-    margin: auto;
-    padding-left: 0px;
+.menu_top, .menu_bottom {
     display: grid;
-    /* grid: repeat(1, 20px)/auto-flow; */
+    gap: 0.5rem;   
+}
+@media (min-width: 700px){
+    .menu_top{
+        grid-template-columns: repeat(4, 1fr);  
+    }
+    .menu_bottom{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.menu_bottom{
+    padding-top: 0.5rem;
 }
 
 .menu_item {
     padding: 0 20px;
+    background-color: #fff;
+    color: #6f8004;
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+    border-top: 8px solid #e9eee0;
+    box-shadow: 0px 0px 5px #ccc;
+    transition: all 0.45ms ease-out;
 }
-a {
+.menu_item:hover{
+    color: rgb(249, 141, 207);
+    border-top: 0px solid;
+    box-shadow: 5px 5px 6px #bffcc8;
+}
+.style_link{
     text-decoration: none;
 }
-a:hover {
-    color: rgb(154, 116, 3);
+li {
+    list-style-type: none;
 }
