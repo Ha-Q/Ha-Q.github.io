@@ -1,6 +1,31 @@
-a:hover, .style_link:hover{
-    color: rgb(249, 141, 207);
+/*
+* Specified rules
+*/
+#name{
+    font-size: 3rem;
+    margin-bottom: 0px;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #e6e6dc;
+}
+#position_title{
+    margin-top: 0.25rem;
+    font-size: 1rem;
+    font-family: input;
+    font-weight: lighter;
+    color: rgb(135, 147, 136);
+}
+.section_title {
+    margin: 20px 0 20px 0;
+    text-align: center;
+    color: rgb(6, 119, 9);
     
+}
+/*
+* Generic rules
+*/
+a:hover, .style_link:hover{
+    color: rgb(10, 125, 138)    
 }
 a:visited{
     color: #115702;
@@ -10,43 +35,34 @@ body {
     color: rgb(98, 103, 68);
     background-color: rgba(249, 249, 207, 0.42);
     margin: 1em auto;
-    width: 60vw;
+    width: 75vw;
 }
 
 h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(81, 92, 59);
 }
-h2 {
-    margin: 20px 0 20px 0;
-    text-align: center;
-    color: rgb(4, 83, 6);
-    
-}
-h3{
+h3, .style_link{
     color: #115702;
 }
-p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 10px 0 10px 0;
+li {
+    list-style-type: none;
+}
+.menu_bottom{
+    padding-top: 0.5rem;
+}
+.menu_top{
+    padding-top: 2rem;
 }
 .menu_top, .menu_bottom {
     display: grid;
     gap: 0.5rem;   
 }
-@media (min-width: 700px){
-    .menu_top{
-        grid-template-columns: repeat(4, 1fr);  
-    }
-    .menu_bottom{
-        grid-template-columns: repeat(3, 1fr);
-    }
+.profile_image{
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
 }
-.menu_bottom{
-    padding-top: 0.5rem;
-}
-
 .menu_item {
     padding: 0 20px;
     background-color: #fff;
@@ -59,13 +75,40 @@ p {
     transition: all 0.45ms ease-out;
 }
 .menu_item:hover{
-    color: rgb(249, 141, 207);
     border-top: 0px solid;
     box-shadow: 5px 5px 6px #bffcc8;
+}
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 10px 0 10px 0;
+}
+#profile_header{
+    display: flex;
+    align-items: center;
+}
+#profile_names{
+    flex-grow: 2;
+    padding-left: 2rem;
 }
 .style_link{
     text-decoration: none;
 }
-li {
-    list-style-type: none;
+@media (min-width: 700px){
+    .profile_image{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    .menu_top{
+        grid-template-columns: repeat(4, 1fr);  
+    }
+    .menu_bottom{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media(max-width: 400px){
+    html {
+        font-size: 62.75%;
+    }
 }
