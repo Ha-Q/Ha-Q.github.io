@@ -94,7 +94,7 @@ p {
 .style_link{
     text-decoration: none;
 }
-@media (min-width: 700px){
+@media (min-width: 700px) and (max-width: 1920px){
     .profile_image{
         width: 200px;
         height: 200px;
@@ -107,8 +107,30 @@ p {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+@media(min-width: 1921px){
+    .profile_image{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    .menu_top{
+        grid-template-columns: repeat(4, 1fr);  
+    }
+    .menu_bottom{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    body{
+        width: 60vw;
+    }
+    html{
+        font-size: 120%;
+    } 
+}
 @media(max-width: 400px){
     html {
         font-size: 62.75%;
+    }
+    body{
+        width: 90vw;
     }
 }
