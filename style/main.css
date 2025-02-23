@@ -37,7 +37,9 @@ body {
     margin: 1em auto;
     width: 75vw;
 }
-
+.dot_point{
+    list-style-type: disc;
+}
 h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(81, 92, 59);
@@ -75,7 +77,7 @@ li {
     transition: all 0.45ms ease-out;
 }
 .menu_item:hover{
-    border-top: 8px solid #fcfbfb;
+    border-top: 8px solid #ffffff;
     box-shadow: 5px 5px 6px #bffcc8;
     font-weight: bold;
 }
@@ -102,10 +104,10 @@ p {
         border-radius: 50%;
     }
     .menu_top{
-        grid-template-columns: repeat(5, 1fr);  
+        grid-template-columns: repeat(4, 1fr);  
     }
     .menu_bottom{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 @media(min-width: 1921px){
@@ -115,10 +117,10 @@ p {
         border-radius: 50%;
     }
     .menu_top{
-        grid-template-columns: repeat(5, 1fr);  
+        grid-template-columns: repeat(4, 1fr);  
     }
     .menu_bottom{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
     body{
         width: 60vw;
