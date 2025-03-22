@@ -1,6 +1,11 @@
 /*
 * Specified rules
 */
+.animated_text {
+    display: none;
+    transition: opacity 2s ease-in-out;
+}
+
 #name{
     font-size: 3rem;
     margin-bottom: 0px;
@@ -97,6 +102,25 @@ p {
 .style_link{
     text-decoration: none;
 }
+.tiles{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+}
+ul{
+    padding-left: 2rem;
+}
+.odd_tile{
+    background-color: #e9eee0;
+}
+.even_tile{
+    background-color: #ffffff;
+}
+.odd_tile:hover, .even_tile:hover{
+    .animated_text{
+        display: block;
+    }
+}
 @media (min-width: 700px) and (max-width: 1920px){
     .profile_image{
         width: 200px;
@@ -123,11 +147,16 @@ p {
         grid-template-columns: repeat(4, 1fr);
     }
     body{
-        width: 60vw;
+        width: 50vw;
     }
     html{
         font-size: 120%;
     } 
+}
+@media(max-width: 700px){
+    .tiles{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 @media(max-width: 400px){
     html {
